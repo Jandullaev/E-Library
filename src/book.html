@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books</title>
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="icon" href="./assets/images/book.png">
+    <link
+    href="./assets/icons/boxicons/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header_inner">
+          <div class="header_inner_logo"><a href="./index.html">E-Library</a></div>
+
+        
+          <nav class="header_inner_nav">
+            <ul class="ul">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#book" style="color: #3498db">Books</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#gallery">Gallery</a></li>
+              <li><a class="btn" href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="toggle">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <article>
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs_inner">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li>Books</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="book" id="book">
+        <div class="container">
+          <div class="book_inner">
+            <div class="section_title">
+              <h2>Books</h2>
+              <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+            </div>
+            <div class="filters">
+              <select id="filterDropdown">
+                  <option value="*">Sorting</option>
+                  <option value="filterRomance">Romance</option>
+                  <option value="filterAdventure">Action & Adventure</option>
+                  <option value="filterMistery">Mistery & Thriller</option>
+                  <option value="filterHistory">Biographics & History</option>
+                  <option value="filterChildren">Children's</option>
+                  <option value="filterFantasy">Fantasy</option>
+                  <option value="filterHorror">Horror</option>
+                  <option value="filterLiterary">Literary Fiction</option>
+                  <option value="filterNonFiction">Non Fiction</option>
+                  <option value="filterScience">Science Fiction</option>
+              </select>
+              <div class="search">
+                <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  placeholder="Search by title"
+                  onkeyup="search()"
+                />
+              </div>
+            </div>
+           
+            <div class="book_container">
+              <script id="book-template" type="text/template">
+                  <div class="book_wrap filter{{subject}}" data-id="{{id}}" data-title="{{title}}" data-subject="{{subject}}" data-due-date="{{dueDate}}" data-image="{{imageBook}}">
+                      <img src="{{imageBook}}" alt="{{title}}">
+                      <div class="book_info">
+                          <h3 class="book_info_title">{{title}}</h3>
+                          <p class="book_info_date">Rental Date: {{dueDate}}</p>
+                      </div>
+                      <button class="book_info_btn"><a href="bookInner.html?id={{id}}">Learn More</a></button>
+                  </div>
+              </script>
+          </div>
+            <div id="no-results-message" style="display: none;">No results found:(</div>
+          </div>
+        </div>
+      </section>
+    </article>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_inner">
+          <div class="footer_inner_top">
+            <div class="logo">
+              <a href="#index.html">E-Library</a>
+            </div>
+            <div class="social_media">
+              <ul>
+                <li class="social_media_link">
+                  <a href="#">
+                  <i class="bx bxl-linkedin-square"></i>
+                </a>
+                </li>
+                <li class="social_media_link">
+                  <a href="#">
+                  <i class="bx bxl-telegram"></i>
+                </a>
+                </li>
+                <li class="social_media_link">
+                  <a href="#">
+                  <i class="bx bxl-instagram"></i>
+                </a>
+                </li>
+                <li class="social_media_link">
+                  <a href="#">
+                  <i class="bx bxl-facebook-square"></i>
+                </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer_nav">
+              <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="./book.html">Books</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_inner_bottom">
+            <div>&copy;Copyright E-Library</div>
+            <p>Designed by Allayar Jandullaev</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/scripts/app.js"></script>
+    <script src="./assets/scripts/main.js"></script>
+
+  </body>
+</html>
