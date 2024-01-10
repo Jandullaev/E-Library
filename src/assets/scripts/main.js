@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+
 function fetchBookDetails(bookId) {
   // Fetch book details from your data source (e.g., another JSON file or API)
   // Replace this with your actual data fetching logic
