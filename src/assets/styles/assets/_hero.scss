@@ -1,0 +1,47 @@
+.hero {
+  //background-image: url('/src/assets/images/hero-books2.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &_inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    z-index: 999;
+    animation-name: inner;
+    animation-duration: 0.3s;
+
+    @keyframes inner {
+      from {
+        transform: scale(0);
+      }
+
+      to {
+        transform: scale(1);
+      }
+    }
+
+    h1 {
+      font-size: 40px;
+      color: $white_color;
+      font-family: $open_font;
+      text-align: center;
+      padding: 5px 0;
+    }
+
+    p {
+      font-size: 24px;
+      font-family: $open_font;
+      color: $white_gray_color;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      @include btn;
+    }
+  }
+}

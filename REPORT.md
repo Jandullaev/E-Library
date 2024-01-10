@@ -19,6 +19,9 @@ The web application is under active development. The initial HTML markup has bee
 The project can be compiled using the provided scripts:
 
 - **Linting:** Run `npm run lint` to check both JavaScript and SCSS files for code style issues.
+- **Test:** Run `npm test` to check JavaScript Functions for code issues.
+- **Contact Server:** Type `cd src/assets/contactBackend` and then `node contact.js` to connect to firebase.
+- **Library Server:** Type `cd src/assets/scripts` and then `node express.js` to connect to `library.json` server which for set updates.
 
 ## Validation
 
@@ -93,3 +96,38 @@ Not Started
 ### 13. Developing 10
 - Working with Responsive
 - Connected to Firestore
+
+### 13. Developing 11
+- Contact is working successfully! 
+- The web application page is displayed correctly for all screen resolutions.
+- Server is working 
+- All data on the website loads via API calls.
+- Booking is working!
+- Created express.json
+- some changes in main.js and app.js
+
+### 14. Developing 12
+- Added calendar
+- added exceptions
+- some changes
+
+### 15. Testing
+- Some changes in calendar date
+- working with unit tests
+- working with lint tests
+- created testing files
+
+### 15. Design
+- Some changes
+- Added comments
+
+### 16. Design 1
+- comments
+
+### 17. Server
+- Fetching is not working on my laptop, But I do not know why?
+- some changes in express.js
+
+### 18. Last Commit
+- Project is done, but without unit test
+- Thank you for the opportunity to work on this project. This is big experience for me!
